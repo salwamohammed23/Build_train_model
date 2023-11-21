@@ -136,8 +136,8 @@ def train_validate_models(data, target_variable):
     elif target_variable in continuous_features:
         try:
             st.write('The case is regression')
-            st.write('regression_setup(data=data, target=target_variable))
-            st.write('regression_compare_models())
+            st.write(regression_setup(data=data, target=target_variable))
+            st.write(regression_compare_models())
         except Exception as e:
             st.error(f"An error occurred during regression model training: {str(e)}")
 ##############################################################################333
