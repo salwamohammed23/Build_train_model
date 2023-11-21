@@ -181,7 +181,7 @@ def main():
                 
                 # Declare data here
                 if User_choice == 'Yes':
-                    columns_to_drop = st.sidebar.multiselect('Select the columns you want to drop', data.columns)
+                    columns_to_drop = st.multiselect('Select the columns you want to drop', data.columns)
                     data.drop(columns=columns_to_drop, inplace=True)
                 elif User_choice == 'No':
                     pass
