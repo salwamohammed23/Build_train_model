@@ -169,7 +169,7 @@ def main():
         
             
             ###################################################################33333
-            tab1, tab2,tab3,tab4= st.tabs(["Show data", "Exploratory Data Analysis","Display Statistical","Train models"])
+            tab1,tab2,tab3,tab4= st.tabs(["Show data", "Exploratory Data Analysis","Display Statistical","Train models"])
 
             # Image Inference Section
             with tab1:
