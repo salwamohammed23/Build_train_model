@@ -183,10 +183,11 @@ def main():
                 if User_choice == 'Yes':
                     columns_to_drop = st.multiselect('Select the columns you want to drop', data.columns)
                     data.drop(columns=columns_to_drop, inplace=True)
+                    st.write(data.columns)
                 elif User_choice == 'No':
                     pass
                 # Show selected columns
-                st.write(data.columns)
+                
                ##############################################################################################################################
             with tab2:
                 # Exploratory Data Analysis
