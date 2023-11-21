@@ -188,7 +188,7 @@ def main():
                 # Show selected columns
                 st.write(data.columns)
                ##############################################################################################################################
-             with tab2:
+            with tab2:
                 # Exploratory Data Analysis
                 if st.button('Explor Data'):
                 
