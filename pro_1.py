@@ -128,7 +128,7 @@ def train_validate_models(data, target_variable):
     if target_variable in categorical_features:
         try:
             st.write('The case is classification')
-            st.write(pycaret.classification.setup(data=data, target=target_variable))
+            pycaret.classification.setup(data=data, target=target_variable)
             st.write(pycaret.classification.compare_models())
         except Exception as e:
             st.error(f"An error occurred during classification model training: {str(e)}")
@@ -136,7 +136,7 @@ def train_validate_models(data, target_variable):
     elif target_variable in continuous_features:
         try:
             st.write('The case is regression')
-            st.write(regression_setup(data=data, target=target_variable))
+            regression_setup(data=data, target=target_variable)
             st.write(regression_compare_models())
         except Exception as e:
             st.error(f"An error occurred during regression model training: {str(e)}")
