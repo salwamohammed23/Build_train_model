@@ -5,7 +5,6 @@ import seaborn as sns
 import sqlite3
 import os
 from sklearn.impute import SimpleImputer
-from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, accuracy_score
 from sklearn.preprocessing import MinMaxScaler, LabelEncoder, OrdinalEncoder
 import pycaret
